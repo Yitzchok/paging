@@ -91,7 +91,7 @@ function paging_get_config($engine) {
 
 		$alertinfo = 'Ring Answer';
 		$callinfo  = '<uri>\;answer-after=0';
-		$sipuri    = 'intercom=true';
+		$sipuri    = ''; //intercom=true';
 		$doptions = 'A(beep)b(autoanswer^s^1(${ALERTINFO},${CALLINFO}))';
 		$vxml_url = '';
 		$dtime = '5';
@@ -107,7 +107,7 @@ function paging_get_config($engine) {
 				$callinfo = trim($autosetting['setting']);
 				break;
 			case 'SIPURI':
-				$sipuri = trim($autosetting['setting']);
+				//$sipuri = trim($autosetting['setting']);
 				break;
 			case 'VXML_URL':
 				$vxml_url = trim($autosetting['setting']);
